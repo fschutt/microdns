@@ -11,13 +11,13 @@
 //! use microdns::{lookup_mx_records, lookup_ip_addresses, resolve_mx_server_ips};
 //!
 //! fn main() -> Result<(), microdns::Error> {
-//!     let domain = "example.com";
+//!     let domain = "google.com";
 //!     
 //!     // Get MX records
 //!     let mx_records = lookup_mx_records(domain)?;
 //!     
 //!     // Get IP addresses for a specific hostname
-//!     let ips = lookup_ip_addresses("mail.example.com")?;
+//!     let ips = lookup_ip_addresses("smtp.google.com")?;
 //!     
 //!     // Or resolve all MX servers to their IPs
 //!     let server_ips = resolve_mx_server_ips(domain)?;
