@@ -1,4 +1,6 @@
-use microdns::{lookup_ip_addresses, lookup_ip_addresses_with_config, lookup_mx_records, DnsConfig, Error};
+use microdns::{
+    lookup_ip_addresses, lookup_ip_addresses_with_config, lookup_mx_records, DnsConfig, Error,
+};
 
 #[test]
 fn test_google_mx_records() -> Result<(), Error> {
