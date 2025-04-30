@@ -1,8 +1,10 @@
 use microdns::{resolve_mx_server_ips_with_config, DnsConfig, Error};
 
 fn main() -> Result<(), Error> {
-    let domain = std::env::args().nth(1).unwrap_or_else(|| "example.com".to_string());
-    
+    let domain = std::env::args()
+        .nth(1)
+        .unwrap_or_else(|| "example.com".to_string());
+
     // Custom DNS config with shorter timeout
     let config = DnsConfig {
         servers: vec![
@@ -15,18 +17,22 @@ fn main() -> Result<(), Error> {
         ],
         timeout: 3,
     };
-    
+
     println!("Resolving mail servers for {}", domain);
-    
+
     let server_ips = resolve_mx_server_ips_with_config(&domain, Some(config))?;
-    
+
     println!("\nMail servers and their IP addresses:");
     for server in server_ips {
-        println!("\nServer: {} ({} IPs)", server.server, server.ip_addresses.len());
+        println!(
+            "\nServer: {} ({} IPs)",
+            server.server,
+            server.ip_addresses.len()
+        );
         for ip in server.ip_addresses {
             println!("  {}", ip);
         }
     }
-    
+
     Ok(())
 }
