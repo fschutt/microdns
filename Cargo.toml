@@ -1,0 +1,12 @@
+[package]
+name = "microdns"
+version = "0.1.0"
+edition = "2021"
+authors = ["Felix Schütt <felix.schuett@maps4print.com>"]
+description = "A minimal DNS resolver library with no external dependencies"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/fschutt/microdns"
+keywords = ["dns", "resolver", "network", "mx", "ip"]
+categories = ["network-programming", "api-bindings"]
+
+[dependencies]
