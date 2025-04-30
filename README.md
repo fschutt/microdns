@@ -2,7 +2,7 @@
 
 [![Crates.io](https://img.shields.io/crates/v/microdns.svg)](https://crates.io/crates/microdns)
 [![Documentation](https://docs.rs/microdns/badge.svg)](https://docs.rs/microdns)
-[![License: MIT](https://img.shields.io/crates/l/microdns.svg)](https://github.com/fschutt/microdns#license)
+[![License: MIT](https://img.shields.io/crates/l/microdns.svg)](https://github.com/fschutt/microdns?tab=readme-ov-file#license)
 
 A minimal DNS resolver library with zero dependencies, using only the Rust standard library.
 
@@ -110,4 +110,4 @@ The library defaults to using these DNS servers in order:
 
 ## License
 
-MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
+MIT license
